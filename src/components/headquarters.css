@@ -1,0 +1,1188 @@
+.modal-backdrop:has(.hq-modal) {
+  padding: 0;
+  background: #161e22;
+}
+.modal.hq-modal {
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: #283237;
+  color: #e3e4da;
+  box-shadow: none;
+}
+.hq-modal .modal-heading {
+  flex: 0 0 auto;
+  padding: 21px 30px 18px;
+  border-bottom: 1px solid #5e685d;
+  background: #202a2f;
+}
+.hq-modal .modal-heading .eyebrow {
+  color: #b7b28f;
+  font-size: 9px;
+}
+.hq-modal .modal-heading h2 {
+  color: #eeeadd;
+  font-size: 34px;
+}
+.hq-modal .modal-heading .icon-button {
+  color: #d3cfb8;
+}
+.hq-navigation {
+  display: flex;
+  flex: 0 0 auto;
+  min-height: 54px;
+  padding: 0 30px;
+  border-bottom: 1px solid #171f23;
+  background: #303a3e;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.hq-tabs {
+  display: flex;
+  align-self: stretch;
+  gap: 9px;
+}
+.hq-tabs button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 112px;
+  padding: 0 16px;
+  background: none;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  color: #aeb7b7;
+  font-size: 12px;
+}
+.hq-tabs button.active {
+  color: #f0dfab;
+  border-bottom-color: #c9b574;
+  background: #45504c;
+}
+.hq-resources {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-variant-numeric: tabular-nums;
+}
+.hq-resources .hq-compact-resupply,
+.hq-inspector .hq-mobile-back {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .hq-resources .hq-compact-resupply {
+    display: flex;
+  }
+}
+@media (max-width: 700px) {
+  .hq-inspector .hq-mobile-back {
+    display: flex;
+    margin-bottom: 18px;
+  }
+}
+.hq-resources > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
+}
+.hq-resources small {
+  font-size: 10px;
+  color: #aeb5ac;
+}
+.hq-resources svg,
+.hq-resources b {
+  color: #dbbd70;
+}
+.headquarters-body {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr) 330px;
+}
+.hq-sidebar {
+  min-width: 0;
+  background: #232e32;
+  border-right: 1px solid #152024;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.officer-portrait {
+  display: block;
+  flex: 0 0 auto;
+  width: 68px;
+  height: 78px;
+  background-image: url('/assets/officers.png');
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  border: 1px solid #817756;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px #0d161838;
+}
+.officer-portrait.fallen {
+  filter: grayscale(1);
+  opacity: 0.55;
+}
+.army-general {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 17px;
+  border-bottom: 1px solid #53605b;
+}
+.army-general .officer-portrait {
+  width: 67px;
+  height: 88px;
+}
+.army-general > span:last-child {
+  font-size: 7px;
+  color: #b7b99d;
+}
+.army-general strong {
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 23px;
+  line-height: 1;
+  color: #e8dec3;
+  margin: 7px 0;
+}
+.army-general small {
+  font-size: 8px;
+  color: #9ba99e;
+}
+.hq-sidebar-label {
+  padding: 24px 17px 12px;
+  display: flex;
+  justify-content: space-between;
+  color: #a5b0a3;
+  font-size: 8px;
+}
+.hq-corps-link {
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border: 0;
+  border-left: 3px solid transparent;
+  background: none;
+  color: #bac4bc;
+  text-align: left;
+}
+.hq-corps-link > span {
+  flex: 1;
+  min-width: 0;
+}
+.hq-corps-link strong {
+  display: block;
+  color: #e3ddc8;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 23px;
+}
+.hq-corps-link small {
+  font-size: 8px;
+  color: #9aa99f;
+}
+.hq-corps-link:hover,
+.hq-corps-link.selected {
+  background: #3d4a4b;
+  border-left-color: #a5b8b7;
+}
+.hq-logistics {
+  padding: 26px 17px;
+  margin-top: auto;
+}
+.hq-modal h4 {
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  margin: 0 0 14px;
+  color: #e0d5b5;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.hq-modal h4 > span {
+  color: #9ead9f;
+  font-size: 8px;
+  font-weight: 400;
+}
+.hq-stat {
+  margin-bottom: 12px;
+  min-width: 0;
+}
+.hq-stat > span {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 9px;
+  color: #b4c1b6;
+  margin-bottom: 5px;
+}
+.hq-stat b {
+  color: #e5e7d7;
+  font-size: 10px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.hq-stat > i {
+  display: block;
+  height: 4px;
+  background: #152127;
+}
+.hq-stat > i > span {
+  display: block;
+  height: 100%;
+  background: #99afa2;
+}
+.hq-stat.gold > i > span {
+  background: #c5b174;
+}
+.hq-date {
+  display: block;
+  margin-top: 15px;
+  color: #8f9f98;
+  font-size: 9px;
+}
+.hq-return {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 18px;
+  border: 0;
+  border-top: 1px solid #55625b;
+  background: #1c272c;
+  color: #d8cdab;
+  font-size: 11px;
+}
+.hq-return:hover {
+  background: #3a494b;
+}
+.hq-content {
+  position: relative;
+  overflow: auto;
+  padding: 27px 25px 35px;
+  min-width: 0;
+  isolation: isolate;
+  background: #b6bdb2;
+  color: #2d3a36;
+}
+.hq-content::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('/assets/terrain.png') center / cover;
+  opacity: 0.075;
+  filter: grayscale(1);
+  pointer-events: none;
+}
+.hq-content-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 23px;
+}
+.hq-content-heading > div > span {
+  font-size: 8px;
+  color: #4d6056;
+}
+.hq-content-heading h3 {
+  font-size: 29px;
+  line-height: 1;
+  margin-top: 5px;
+}
+.hq-note {
+  color: #53665b;
+  font-size: 9px;
+}
+.hq-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #64736d;
+  background: #3c4b4e;
+  color: #e2dcc6;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  min-height: 34px;
+  padding: 8px 11px;
+  border-radius: 2px;
+}
+.hq-button:hover:not(:disabled) {
+  background: #526361;
+  border-color: #b4c2a9;
+}
+.hq-button:disabled {
+  cursor: default;
+  opacity: 0.4;
+}
+.hq-button b {
+  font-weight: 500;
+  color: #e4cc87;
+  margin-left: auto;
+  white-space: nowrap;
+}
+.hq-button.primary {
+  background: #a3915f;
+  border-color: #cbb77b;
+  color: #162525;
+}
+.hq-button.primary:hover:not(:disabled) {
+  background: #bead77;
+}
+.hq-button.primary b {
+  color: #162525;
+}
+.hq-button.full {
+  width: 100%;
+  margin-top: 10px;
+}
+.hq-organization {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.hq-corps {
+  min-width: 0;
+  border-top: 3px solid var(--corps-color);
+}
+.hq-corps.drop-ready {
+  outline: 2px dashed #627e83;
+  outline-offset: 7px;
+}
+.hq-corps-header {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  width: 100%;
+  min-height: 110px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #737d70;
+  padding: 14px;
+  background: #354146;
+  color: #d9dfd5;
+}
+.hq-corps-header:hover,
+.hq-corps-header.selected {
+  background: #435356;
+}
+.hq-corps-header > span:last-child {
+  flex: 1;
+  min-width: 0;
+}
+.hq-corps-header strong {
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: #e7d8ae;
+  font-size: 29px;
+  line-height: 1;
+}
+.hq-corps-header small {
+  display: block;
+  color: #b7c3b9;
+  font-size: 9px;
+  margin-top: 7px;
+}
+.hq-corps-header b {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  font-weight: 400;
+  color: #cbd4c9;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.hq-corps-header i {
+  color: #d8c68f;
+  font-size: 9px;
+  font-style: normal;
+}
+.corps-specialty {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #506251;
+  font-size: 9px;
+  padding: 13px 2px;
+}
+.hq-regiments {
+  display: grid;
+  grid-template-rows: repeat(4, 110px);
+  gap: 11px;
+}
+.hq-regiment {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+  height: 110px;
+  padding: 11px;
+  background: #e0e2d9;
+  border: 1px solid #828f7a;
+  border-left: 3px solid var(--corps-color);
+  border-radius: 2px;
+  color: #34453d;
+  text-align: left;
+  box-shadow: 0 2px 4px #30432d16;
+}
+.hq-regiment:hover {
+  background: #ecece1;
+  border-color: #7b875e;
+}
+.hq-regiment.selected {
+  border-color: #897842;
+  background: #f0ebd6;
+  box-shadow: inset 0 0 0 1px #baac68;
+}
+.hq-regiment .officer-portrait {
+  width: 56px;
+  height: 76px;
+}
+.regiment-body {
+  flex: 1;
+  min-width: 0;
+}
+.regiment-type {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #73816c;
+  font-size: 7px;
+}
+.regiment-type > span {
+  margin-left: auto;
+  color: #a18b46;
+}
+.regiment-body > strong {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.05;
+  margin: 4px 0 3px;
+}
+.regiment-body > small {
+  color: #78806d;
+  font-size: 8px;
+}
+.regiment-strength {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+  margin-top: 6px;
+}
+.regiment-strength b {
+  font-size: 13px;
+  color: #394c3d;
+  font-weight: 500;
+}
+.regiment-strength small {
+  font-size: 9px;
+  color: #839078;
+}
+.regiment-strength > span {
+  font-size: 8px;
+  color: #7f8667;
+  margin-left: auto;
+}
+.strength-line {
+  display: block;
+  height: 3px;
+  background: #b4bfaa;
+  margin-top: 5px;
+}
+.strength-line > span {
+  display: block;
+  height: 3px;
+  background: #7b9278;
+}
+.hq-empty {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  justify-content: center;
+  background: #e4e8db38;
+  border: 1px dashed #86937c;
+  color: #718369;
+  border-radius: 2px;
+  font-size: 9px;
+}
+.hq-empty:hover {
+  color: #3d5847;
+  background: #e7e9da94;
+  border-color: #5b7463;
+}
+.hq-inspector {
+  overflow: auto;
+  background: #2b353a;
+  padding: 24px 22px;
+  border-left: 1px solid #172125;
+  min-width: 0;
+}
+.detail-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #596762;
+  margin-bottom: 17px;
+}
+.detail-title > svg {
+  color: #bfaa6f;
+  flex: 0 0 auto;
+}
+.detail-title > span {
+  min-width: 0;
+  font-size: 7px;
+  color: #a1b3ac;
+}
+.detail-title strong {
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: #f0e4c1;
+  font-size: 25px;
+  line-height: 1.02;
+  margin-top: 5px;
+  overflow-wrap: anywhere;
+}
+.unit-stars {
+  display: flex;
+  margin-left: auto;
+  color: #c7ac61 !important;
+}
+.detail-officer {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 17px;
+}
+.detail-officer > div {
+  min-width: 0;
+}
+.detail-officer > div > span {
+  font-size: 8px;
+  color: #a7b4aa;
+}
+.detail-officer strong {
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: #e8dec3;
+  font-size: 23px;
+  line-height: 1.1;
+  margin: 4px 0;
+}
+.detail-officer small {
+  color: #94aaa0;
+  font-size: 8px;
+}
+.hq-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 8px;
+  color: #a7b9af;
+  margin-bottom: 13px;
+}
+.hq-modal input:not([type='range']),
+.hq-modal select {
+  width: 100%;
+  min-width: 0;
+  color: #dddcc9;
+  background: #212e34;
+  border: 1px solid #65736b;
+  border-radius: 2px;
+  padding: 8px;
+  font:
+    10px Inter,
+    sans-serif;
+  min-height: 32px;
+}
+.hq-modal select option {
+  color: #e8e5d5;
+  background: #26383b;
+}
+.hq-modal select option:disabled {
+  color: #6f7f78;
+}
+.hq-modal input:focus,
+.hq-modal select:focus {
+  outline: 1px solid #c3b27a;
+  outline-offset: 1px;
+}
+.hq-modal input[type='range'] {
+  width: 100%;
+  accent-color: #c3b47d;
+}
+.strength-readout {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid #53645b;
+  padding-top: 16px;
+  margin-top: 17px;
+  margin-bottom: 13px;
+}
+.strength-readout strong {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 32px;
+  color: #eee5c7;
+}
+.strength-readout small {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #a3b4a8;
+}
+.strength-readout > span {
+  color: #cab882;
+  font-size: 10px;
+}
+.hq-skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 17px;
+  margin: 20px 0 7px;
+}
+.hq-readiness {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+.detail-section {
+  border-top: 1px solid #4d6059;
+  margin-top: 17px;
+  padding-top: 17px;
+}
+.weapon-art {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background: #232b2c;
+}
+.weapon-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.weapon-art[data-pattern='improved'] img {
+  clip-path: polygon(0 20%, 100% 20%, 100% 36%, 32% 36%, 32% 42%, 0 42%);
+}
+.weapon-art[data-pattern='rifle'] img,
+.weapon-art[data-pattern='carbine'] img {
+  clip-path: polygon(15% 44%, 32% 44%, 32% 36.5%, 70% 36.5%, 70% 55%, 15% 55%);
+}
+.detail-section > .weapon-art {
+  margin: 4px 0 12px;
+}
+.detail-inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 15px;
+  margin: 10px 0;
+  font-size: 9px;
+  color: #a5b6ab;
+}
+.detail-inline > b,
+.detail-inline > strong {
+  color: #ddd8bf;
+  font-weight: 500;
+  text-align: right;
+}
+.hq-segmented {
+  display: flex;
+  padding: 2px;
+  border: 1px solid #596b62;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+.hq-segmented button {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 4px;
+  border: none;
+  background: none;
+  color: #acbcb0;
+  font-size: 9px;
+  text-transform: capitalize;
+}
+.hq-segmented button.active {
+  background: #556561;
+  color: #f2e3ba;
+}
+.hq-action-line {
+  display: flex;
+  align-items: stretch;
+  gap: 7px;
+}
+.hq-action-line > input {
+  flex: 0 0 62px;
+  max-width: 62px;
+}
+.hq-action-line > select {
+  flex: 1;
+}
+.hq-action-line > button {
+  flex: 1;
+}
+.hq-action-line > select + button {
+  flex: 0 0 auto;
+}
+.perk-options {
+  display: grid;
+  gap: 6px;
+}
+.perk-options button {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  padding: 9px;
+  border: 1px solid #536a60;
+  border-radius: 2px;
+  background: #273b3e;
+  text-align: left;
+  color: #bfcbba;
+}
+.perk-options button:disabled {
+  opacity: 0.5;
+}
+.perk-options button.selected {
+  border-color: #c4ad68;
+  opacity: 1;
+  background: #555c45;
+  color: #eee2ae;
+}
+.perk-options button > span {
+  flex: 1;
+}
+.perk-options strong {
+  display: block;
+  font-size: 9px;
+  font-weight: 500;
+}
+.perk-options small {
+  display: block;
+  font-size: 8px;
+  margin-top: 4px;
+  color: #a9b8a3;
+}
+.service-record {
+  border-top: 1px solid #526459;
+  margin-top: 18px;
+  padding-top: 16px;
+  font-size: 10px;
+  color: #d2d3be;
+}
+.service-record summary {
+  cursor: pointer;
+}
+.service-record summary > span {
+  float: right;
+  font-size: 8px;
+  color: #9aada0;
+}
+.service-record > div {
+  padding: 12px 0;
+  border-bottom: 1px solid #40564b;
+}
+.service-record strong,
+.service-record > div > span {
+  display: block;
+}
+.service-record > div > span,
+.service-record p {
+  font-size: 8px;
+  color: #a0b39d;
+  margin-top: 5px;
+}
+.large-portrait {
+  width: 130px;
+  height: 154px;
+  margin: 6px auto 18px;
+}
+.inspector-name {
+  font-size: 29px;
+  color: #e8dcba;
+  text-align: center;
+  margin-bottom: 22px;
+  line-height: 1;
+}
+.officer-rank {
+  font-size: 9px;
+  color: #b8aa7f;
+  text-align: center;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.officer-recovery {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px 0;
+  color: #c0987b;
+  font-size: 10px;
+}
+.recruit-summary {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0;
+}
+.recruit-summary strong {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 34px;
+  text-align: center;
+  color: #e9debd;
+}
+.recruit-summary small {
+  display: block;
+  font-family: Inter, sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  color: #a5b2a3;
+}
+.hq-armory {
+  display: grid;
+  gap: 1px;
+}
+.hq-weapon-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 65px 178px;
+  align-items: center;
+  gap: 15px;
+  padding: 17px 12px;
+  border-bottom: 1px solid #8d9d8c;
+  border-left: 3px solid transparent;
+  background: #e0e4d766;
+}
+.hq-weapon-row.selected {
+  background: #e7e9df;
+  border-left-color: #9b8749;
+}
+.weapon-choice {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: #394e41;
+  text-align: left;
+  min-width: 0;
+}
+.weapon-choice .weapon-art {
+  height: auto;
+  max-width: 285px;
+  margin-bottom: 10px;
+}
+.weapon-choice strong {
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 22px;
+  line-height: 1;
+}
+.weapon-choice small {
+  display: block;
+  font-size: 8px;
+  color: #7b8a75;
+  margin-top: 7px;
+}
+.weapon-stock > span {
+  display: block;
+  font-size: 8px;
+  color: #6d816d;
+  margin: 10px 0;
+}
+.weapon-stock b {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4b624d;
+  margin-top: 3px;
+}
+.weapon-transaction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+.weapon-transaction > label {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 9px;
+  color: #6b7f67;
+}
+.weapon-transaction input {
+  background: #d2dac8 !important;
+  color: #3d5947 !important;
+  border-color: #91a189 !important;
+}
+.weapon-transaction .hq-button {
+  gap: 6px;
+  padding: 7px;
+}
+.weapon-transaction .hq-button small {
+  display: block;
+  margin-top: 3px;
+  font-size: 8px;
+  color: #aebda7;
+}
+.comparison-stats {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+.comparison-stats > span {
+  flex: 1;
+  font-size: 9px;
+  color: #a7b8ab;
+}
+.comparison-stats b {
+  display: block;
+  font-size: 21px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  margin-top: 5px;
+}
+.positive {
+  color: #add0a6;
+}
+.negative {
+  color: #d19580;
+}
+.hq-officers {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+.hq-officer-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  text-align: left;
+  border: 1px solid #8b9980;
+  border-radius: 2px;
+  background: #dfe3d8;
+  padding: 13px;
+  color: #405742;
+}
+.hq-officer-card.selected {
+  background: #efe9d4;
+  border-color: #9a884d;
+  box-shadow: inset 0 0 0 1px #b8a46b;
+}
+.hq-officer-card .officer-portrait {
+  width: 68px;
+  height: 92px;
+}
+.hq-officer-card > div {
+  min-width: 0;
+  flex: 1;
+}
+.hq-officer-card > div > span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 8px;
+  color: #7d876c;
+}
+.hq-officer-card strong {
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 22px;
+  line-height: 1;
+  margin-top: 5px;
+}
+.hq-officer-card small {
+  display: block;
+  color: #7a836a;
+  font-size: 8px;
+  margin-top: 8px;
+  line-height: 1.3;
+}
+.hq-officer-card b {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 8px;
+  font-weight: 400;
+  color: #7f865e;
+}
+.hq-officer-card.fallen {
+  opacity: 0.65;
+}
+@media (min-width: 1700px) {
+  .headquarters-body {
+    grid-template-columns: 255px minmax(0, 1fr) 365px;
+  }
+  .hq-content {
+    padding: 32px 38px;
+  }
+  .hq-regiments {
+    grid-template-rows: repeat(4, 124px);
+    gap: 15px;
+  }
+  .hq-regiment {
+    height: 124px;
+  }
+  .hq-regiment .officer-portrait {
+    width: 72px;
+    height: 94px;
+  }
+  .regiment-body > strong {
+    font-size: 22px;
+  }
+  .hq-officers {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 1200px) {
+  .headquarters-body {
+    grid-template-columns: minmax(0, 1fr) 310px;
+  }
+  .hq-sidebar {
+    display: none;
+  }
+  .hq-content {
+    padding: 22px 20px;
+  }
+  .hq-organization {
+    gap: 17px;
+  }
+  .hq-weapon-row {
+    grid-template-columns: minmax(0, 1fr) 56px 166px;
+    gap: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .headquarters-body {
+    grid-template-columns: minmax(0, 1fr) 290px;
+  }
+  .hq-organization {
+    grid-template-columns: 1fr;
+  }
+  .hq-officers {
+    grid-template-columns: 1fr;
+  }
+  .hq-weapon-row {
+    grid-template-columns: minmax(0, 1fr) 65px;
+  }
+  .weapon-transaction {
+    grid-column: 1/-1;
+    display: flex;
+  }
+  .weapon-transaction > label {
+    flex: 1;
+  }
+  .weapon-transaction .hq-button {
+    min-width: 82px;
+  }
+  .hq-note {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .hq-modal .modal-heading {
+    padding: 16px;
+  }
+  .hq-modal .modal-heading h2 {
+    font-size: 29px;
+  }
+  .hq-modal .modal-heading .eyebrow {
+    font-size: 7px;
+  }
+  .hq-navigation {
+    padding: 0 12px;
+    min-height: 49px;
+    gap: 7px;
+  }
+  .hq-tabs {
+    gap: 1px;
+  }
+  .hq-tabs button {
+    min-width: 0;
+    padding: 0 9px;
+    gap: 6px;
+    font-size: 10px;
+  }
+  .hq-tabs svg {
+    width: 14px;
+  }
+  .hq-resources {
+    gap: 0;
+  }
+  .hq-resources > span {
+    font-size: 12px;
+    gap: 5px;
+  }
+  .hq-resources > span:first-child,
+  .hq-resources small {
+    display: none;
+  }
+  .hq-resources svg {
+    width: 13px;
+  }
+  .headquarters-body {
+    display: block;
+    overflow: auto;
+  }
+  .hq-content,
+  .hq-inspector {
+    overflow: visible;
+  }
+  .hq-content {
+    padding: 22px 16px;
+  }
+  .hq-content-heading h3 {
+    font-size: 27px;
+  }
+  .hq-content-heading .hq-button {
+    font-size: 9px;
+    padding: 8px;
+  }
+  .hq-organization {
+    gap: 26px;
+  }
+  .hq-regiments {
+    grid-template-rows: repeat(4, 104px);
+  }
+  .hq-regiment {
+    height: 104px;
+  }
+  .hq-inspector {
+    border-top: 3px solid #8d987e;
+    border-left: 0;
+    padding: 23px 20px;
+  }
+  .hq-inspector .large-portrait {
+    width: 110px;
+    height: 132px;
+  }
+  .hq-content::before {
+    background-size: auto 100%;
+  }
+  .hq-weapon-row {
+    padding: 15px 8px;
+  }
+  .weapon-transaction .hq-button {
+    min-width: 78px;
+  }
+}

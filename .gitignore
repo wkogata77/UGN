@@ -1,0 +1,29 @@
+# Dependencies and generated web output
+node_modules/
+dist/
+
+# Godot import caches and exported builds
+.godot/
+build/
+builds/
+
+# Generated test captures and logs
+test-results/
+*.log
+*.tmp
+
+# Local visual references and recordings
+/inspo_photos/
+*.mp4
+*.mov
+*.mkv
+*.avi
+
+# Local environment, credentials and editor files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

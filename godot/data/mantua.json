@@ -1,0 +1,32 @@
+{
+  "name": "The Mantua Operation",
+  "date": "August 1796",
+  "towns": [
+    {"id":"castiglione","name":"Castiglione","x":700,"y":730,"major":true,"kind":"depot","owner":"player"},
+    {"id":"solferino","name":"Solferino","x":1200,"y":745,"major":false,"kind":"town","owner":"neutral"},
+    {"id":"peschiera","name":"Peschiera","x":1810,"y":395,"major":true,"kind":"crossing","owner":"enemy"},
+    {"id":"valeggio","name":"Valeggio","x":2280,"y":980,"major":true,"kind":"crossing","owner":"enemy"},
+    {"id":"goito","name":"Goito","x":1730,"y":1610,"major":false,"kind":"crossing","owner":"neutral"},
+    {"id":"roverbella","name":"Roverbella","x":2490,"y":1510,"major":false,"kind":"town","owner":"enemy"},
+    {"id":"villafranca","name":"Villafranca","x":2990,"y":955,"major":true,"kind":"depot","owner":"enemy"},
+    {"id":"verona","name":"Verona road","x":3860,"y":400,"major":true,"kind":"depot","owner":"enemy"},
+    {"id":"mantua","name":"Mantua","x":2710,"y":2260,"major":true,"kind":"fort","owner":"enemy"},
+    {"id":"volta","name":"Volta Mantovana","x":1550,"y":1320,"major":false,"kind":"town","owner":"neutral"}
+  ],
+  "river": [[1970,-1400],[1970,395],[2125,980],[1910,1320],[1870,1610],[2160,1940],[2470,2260],[3180,2700],[4050,4280]],
+  "crossings": [395,980,1610,2260],
+  "roads": [
+    [[0,730],[700,730],[1200,745],[1900,980],[2350,980],[2990,955],[3860,400],[4320,350]],
+    [[700,730],[1550,1320],[1640,1610],[2100,1610],[2490,1510],[2990,955]],
+    [[1200,745],[1740,395],[2200,395],[2990,955]],
+    [[1550,1320],[1730,1610],[1980,2050],[2240,2260],[2700,2260],[2710,2600]],
+    [[2350,980],[2490,1510],[2710,2260]]
+  ],
+  "forests": [
+    {"x":430,"y":440,"rx":180,"ry":150},{"x":960,"y":420,"rx":210,"ry":100},
+    {"x":1410,"y":1110,"rx":170,"ry":105},{"x":850,"y":1480,"rx":230,"ry":160},
+    {"x":2150,"y":620,"rx":140,"ry":110},{"x":3300,"y":660,"rx":200,"ry":125},
+    {"x":3090,"y":1720,"rx":225,"ry":160},{"x":1500,"y":2290,"rx":230,"ry":120},
+    {"x":3600,"y":2370,"rx":230,"ry":170}
+  ]
+}
