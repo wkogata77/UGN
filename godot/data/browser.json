@@ -1,0 +1,924 @@
+{
+  "state": {
+    "version": 3,
+    "general": {
+      "id": "general",
+      "name": "Napoleon Bonaparte",
+      "rank": "Commander-in-chief"
+    },
+    "corps": [
+      {
+        "id": "c1",
+        "name": "I Corps",
+        "commanderId": "commander-c1",
+        "commander": "Gen. Auguste Morel",
+        "specialty": "Drill",
+        "color": "#96b1bd",
+        "officerId": "officer-c1"
+      },
+      {
+        "id": "c2",
+        "name": "II Corps",
+        "commanderId": "commander-c2",
+        "commander": "Gen. Henri Valette",
+        "specialty": "Resolve",
+        "color": "#c6a887",
+        "officerId": "officer-c2"
+      }
+    ],
+    "selectedCommander": null,
+    "mode": "campaign",
+    "paused": true,
+    "speed": 1,
+    "hours": 6,
+    "cash": 6800,
+    "victories": 0,
+    "army": {
+      "x": 280,
+      "y": 727,
+      "path": [],
+      "name": "Army of the Danube",
+      "condition": 100
+    },
+    "units": [
+      {
+        "id": "u1",
+        "name": "1st Line Regiment",
+        "kind": "infantry",
+        "men": 800,
+        "maxMen": 800,
+        "weapon": "musket",
+        "commander": "Col. Moreau",
+        "experience": 0,
+        "morale": 100,
+        "corpsId": "c1",
+        "officerId": "officer-u1",
+        "skills": {
+          "firearms": 32,
+          "melee": 30,
+          "stamina": 42,
+          "discipline": 38
+        },
+        "perk": null,
+        "history": [],
+        "condition": 100,
+        "ammo": 100,
+        "trainedUntil": 0
+      },
+      {
+        "id": "u2",
+        "name": "2nd Line Regiment",
+        "kind": "infantry",
+        "men": 700,
+        "maxMen": 700,
+        "weapon": "musket",
+        "commander": "Col. Laurent",
+        "experience": 0,
+        "morale": 100,
+        "corpsId": "c1",
+        "officerId": "officer-u2",
+        "skills": {
+          "firearms": 32,
+          "melee": 30,
+          "stamina": 42,
+          "discipline": 38
+        },
+        "perk": null,
+        "history": [],
+        "condition": 100,
+        "ammo": 100,
+        "trainedUntil": 0
+      },
+      {
+        "id": "u3",
+        "name": "9th Light Infantry",
+        "kind": "infantry",
+        "men": 600,
+        "maxMen": 600,
+        "weapon": "musket",
+        "commander": "Col. Girard",
+        "experience": 0,
+        "morale": 100,
+        "corpsId": "c1",
+        "officerId": "officer-u3",
+        "skills": {
+          "firearms": 32,
+          "melee": 30,
+          "stamina": 42,
+          "discipline": 38
+        },
+        "perk": null,
+        "history": [],
+        "condition": 100,
+        "ammo": 100,
+        "trainedUntil": 0
+      },
+      {
+        "id": "u4",
+        "name": "4th Hussars",
+        "kind": "cavalry",
+        "men": 240,
+        "maxMen": 240,
+        "weapon": "sabre",
+        "commander": "Col. Fournier",
+        "experience": 0,
+        "morale": 100,
+        "corpsId": "c1",
+        "officerId": "officer-u4",
+        "skills": {
+          "firearms": 32,
+          "melee": 48,
+          "stamina": 42,
+          "discipline": 38
+        },
+        "perk": null,
+        "history": [],
+        "condition": 100,
+        "ammo": 100,
+        "trainedUntil": 0
+      },
+      {
+        "id": "u5",
+        "name": "1st Foot Artillery",
+        "kind": "artillery",
+        "men": 120,
+        "maxMen": 120,
+        "weapon": "cannon",
+        "commander": "Cpt. Aubert",
+        "experience": 0,
+        "morale": 100,
+        "corpsId": "c2",
+        "officerId": "officer-u5",
+        "skills": {
+          "firearms": 44,
+          "melee": 30,
+          "stamina": 42,
+          "discipline": 38
+        },
+        "perk": null,
+        "history": [],
+        "condition": 100,
+        "ammo": 100,
+        "trainedUntil": 0
+      }
+    ],
+    "inventory": {
+      "musket": 400,
+      "improved": 0,
+      "rifle": 0,
+      "sabre": 20,
+      "cannon": 1,
+      "carbine": 0,
+      "howitzer": 0
+    },
+    "market": {
+      "musket": 2400,
+      "improved": 1800,
+      "rifle": 1000,
+      "sabre": 500,
+      "cannon": 12,
+      "carbine": 800,
+      "howitzer": 6
+    },
+    "enemies": [
+      {
+        "id": "e1",
+        "name": "Kienmayer",
+        "title": "Advance guard",
+        "x": 610,
+        "y": 690,
+        "strength": 1740,
+        "reward": 4800,
+        "path": [],
+        "home": {
+          "x": 660,
+          "y": 690
+        },
+        "defeated": false,
+        "intel": {
+          "x": 610,
+          "y": 690,
+          "at": -6,
+          "strength": 1800
+        }
+      },
+      {
+        "id": "e2",
+        "name": "Werneck",
+        "title": "Austrian division",
+        "x": 1070,
+        "y": 260,
+        "strength": 2420,
+        "reward": 6600,
+        "path": [],
+        "home": {
+          "x": 1070,
+          "y": 260
+        },
+        "defeated": false,
+        "intel": {
+          "x": 1070,
+          "y": 260,
+          "at": -6,
+          "strength": 2400
+        }
+      },
+      {
+        "id": "e3",
+        "name": "Mack",
+        "title": "Main force",
+        "x": 1230,
+        "y": 625,
+        "strength": 3000,
+        "reward": 8800,
+        "path": [],
+        "home": {
+          "x": 1230,
+          "y": 625
+        },
+        "defeated": false,
+        "intel": {
+          "x": 1230,
+          "y": 625,
+          "at": -6,
+          "strength": 3000
+        }
+      }
+    ],
+    "selected": [
+      "u1"
+    ],
+    "battle": null,
+    "report": null,
+    "nextId": 6,
+    "enemyClock": 0,
+    "immunity": 0,
+    "log": [
+      {
+        "text": "Army assembled south of Ulm.",
+        "hours": 6
+      },
+      {
+        "text": "Austrian advance guard sighted near Gunzburg.",
+        "hours": 6
+      }
+    ],
+    "officers": [
+      {
+        "id": "officer-c1",
+        "name": "Auguste Morel",
+        "portrait": 1,
+        "xp": 120,
+        "hired": true,
+        "specialty": "Drill",
+        "woundedUntil": 0,
+        "wounds": 0,
+        "dead": false,
+        "cost": 1400
+      },
+      {
+        "id": "officer-c2",
+        "name": "Henri Valette",
+        "portrait": 2,
+        "xp": 120,
+        "hired": true,
+        "specialty": "Resolve",
+        "woundedUntil": 0,
+        "wounds": 0,
+        "dead": false,
+        "cost": 1400
+      },
+      {
+        "id": "officer-u1",
+        "name": "Moreau",
+        "portrait": 3,
+        "xp": 60,
+        "hired": true,
+        "specialty": "Drill",
+        "woundedUntil": 0,
+        "wounds": 0,
+        "dead": false,
+        "cost": 900
+      },
+      {
+        "id": "officer-u2",
+        "name": "Laurent",
+        "portrait": 4,
+        "xp": 60,
+        "hired": true,
+        "specialty": "Resolve",
+        "woundedUntil": 0,
+        "wounds": 0,
+        "dead": false,
+        "cost": 900
+      },
+      {
+        "id": "officer-u3",
+        "name": "Girard",
+        "portrait": 5,
+        "xp": 60,
+        "hired": true,
+        "specialty": "Drill",
+        "woundedUntil": 0,
+        "wounds": 0,
+        "dead": false,
+        "cost": 900
+      },
+      {
+        "id": "officer-u4",
+        "name": "Fournier",
+        "portrait": 6,
+        "xp": 60,
+        "hired": true,
+        "specialty": "Resolve",
+        "woundedUntil": 0,
+        "wounds": 0,
+        "dead": false,
+        "cost": 900
+      },
+      {
+        "id": "officer-u5",
+        "name": "Aubert",
+        "portrait": 7,
+        "xp": 20,
+        "hired": true,
+        "specialty": "Drill",
+        "woundedUntil": 0,
+        "wounds": 0,
+        "dead": false,
+        "cost": 500
+      },
+      {
+        "id": "reserve-0",
+        "name": "Charles Delmas",
+        "portrait": 9,
+        "xp": 120,
+        "hired": false,
+        "specialty": "Drill",
+        "woundedUntil": 0,
+        "wounds": 0,
+        "dead": false,
+        "cost": 1400
+      },
+      {
+        "id": "reserve-1",
+        "name": "Etienne Beaumont",
+        "portrait": 10,
+        "xp": 60,
+        "hired": false,
+        "specialty": "Resolve",
+        "woundedUntil": 0,
+        "wounds": 0,
+        "dead": false,
+        "cost": 900
+      },
+      {
+        "id": "reserve-2",
+        "name": "Louis Renaud",
+        "portrait": 11,
+        "xp": 20,
+        "hired": false,
+        "specialty": "Drill",
+        "woundedUntil": 0,
+        "wounds": 0,
+        "dead": false,
+        "cost": 500
+      },
+      {
+        "id": "reserve-3",
+        "name": "Jean Villiers",
+        "portrait": 12,
+        "xp": 120,
+        "hired": false,
+        "specialty": "Resolve",
+        "woundedUntil": 0,
+        "wounds": 0,
+        "dead": false,
+        "cost": 1400
+      },
+      {
+        "id": "reserve-4",
+        "name": "Pierre Duval",
+        "portrait": 13,
+        "xp": 60,
+        "hired": false,
+        "specialty": "Drill",
+        "woundedUntil": 0,
+        "wounds": 0,
+        "dead": false,
+        "cost": 900
+      }
+    ],
+    "settings": {
+      "sound": true,
+      "volume": 0.3
+    },
+    "supply": 500,
+    "recon": {
+      "remaining": 0,
+      "cooldown": 0
+    },
+    "selectedSupply": false,
+    "orderMode": "move"
+  },
+  "weapons": {
+    "musket": {
+      "name": "Charleville 1777",
+      "kind": "infantry",
+      "price": 8,
+      "resale": 5,
+      "power": 1,
+      "range": 156,
+      "lot": 50,
+      "description": "Standard service musket"
+    },
+    "improved": {
+      "name": "Charleville AN IX",
+      "kind": "infantry",
+      "price": 14,
+      "resale": 9,
+      "power": 1.28,
+      "range": 175,
+      "lot": 50,
+      "description": "Improved infantry musket"
+    },
+    "rifle": {
+      "name": "Versailles rifle",
+      "kind": "infantry",
+      "price": 24,
+      "resale": 15,
+      "power": 1.55,
+      "range": 210,
+      "lot": 50,
+      "description": "Accurate, longer-range fire"
+    },
+    "sabre": {
+      "name": "Light cavalry sabre",
+      "kind": "cavalry",
+      "price": 18,
+      "resale": 11,
+      "power": 1.1,
+      "range": 40,
+      "lot": 20,
+      "description": "Cavalry armament"
+    },
+    "cannon": {
+      "name": "6-pounder field gun",
+      "kind": "artillery",
+      "price": 180,
+      "resale": 110,
+      "power": 1.5,
+      "range": 335,
+      "lot": 1,
+      "description": "Long-range field artillery"
+    },
+    "carbine": {
+      "name": "Dragoon carbine",
+      "kind": "cavalry",
+      "price": 22,
+      "resale": 13,
+      "power": 0.85,
+      "range": 125,
+      "lot": 20,
+      "description": "Mounted or dismounted fire"
+    },
+    "howitzer": {
+      "name": "6-inch howitzer",
+      "kind": "artillery",
+      "price": 260,
+      "resale": 150,
+      "power": 1.8,
+      "range": 280,
+      "lot": 1,
+      "description": "Heavy close-support artillery"
+    }
+  },
+  "towns": [
+    {
+      "name": "Ulm",
+      "x": 222,
+      "y": 628,
+      "major": true
+    },
+    {
+      "name": "Gunzburg",
+      "x": 395,
+      "y": 570
+    },
+    {
+      "name": "Dillingen",
+      "x": 596,
+      "y": 470
+    },
+    {
+      "name": "Donauworth",
+      "x": 900,
+      "y": 407,
+      "major": true
+    },
+    {
+      "name": "Augsburg",
+      "x": 815,
+      "y": 770,
+      "major": true
+    },
+    {
+      "name": "Nordlingen",
+      "x": 1110,
+      "y": 239
+    }
+  ],
+  "italyTowns": [
+    {
+      "name": "Forward depot",
+      "x": 222,
+      "y": 628,
+      "major": true
+    },
+    {
+      "name": "San Martino",
+      "x": 395,
+      "y": 570
+    },
+    {
+      "name": "River post",
+      "x": 596,
+      "y": 470
+    },
+    {
+      "name": "Valeggio",
+      "x": 900,
+      "y": 407,
+      "major": true
+    },
+    {
+      "name": "Supply base",
+      "x": 815,
+      "y": 770,
+      "major": true
+    },
+    {
+      "name": "Northern post",
+      "x": 1110,
+      "y": 239
+    }
+  ],
+  "forests": {
+    "campaign": [
+      {
+        "x": 210,
+        "y": 230,
+        "rx": 230,
+        "ry": 160
+      },
+      {
+        "x": 688,
+        "y": 188,
+        "rx": 235,
+        "ry": 112
+      },
+      {
+        "x": 1110,
+        "y": 730,
+        "rx": 270,
+        "ry": 155
+      },
+      {
+        "x": 145,
+        "y": 864,
+        "rx": 140,
+        "ry": 100
+      },
+      {
+        "x": 1260,
+        "y": 430,
+        "rx": 170,
+        "ry": 75
+      }
+    ],
+    "battle": [
+      {
+        "x": 400,
+        "y": 208,
+        "rx": 255,
+        "ry": 130
+      },
+      {
+        "x": 970,
+        "y": 770,
+        "rx": 240,
+        "ry": 140
+      },
+      {
+        "x": 1310,
+        "y": 250,
+        "rx": 155,
+        "ry": 195
+      }
+    ]
+  },
+  "hills": [
+    {
+      "x": 530,
+      "y": 625,
+      "rx": 145,
+      "ry": 160
+    },
+    {
+      "x": 1050,
+      "y": 370,
+      "rx": 165,
+      "ry": 130
+    }
+  ],
+  "fields": {
+    "village": {
+      "name": "Saint Martin",
+      "subtitle": "Village engagement",
+      "type": "capture",
+      "objective": {
+        "x": 724,
+        "y": 430,
+        "radius": 110,
+        "seconds": 150
+      },
+      "forests": [
+        {
+          "x": 400,
+          "y": 208,
+          "rx": 255,
+          "ry": 130
+        },
+        {
+          "x": 970,
+          "y": 770,
+          "rx": 240,
+          "ry": 140
+        },
+        {
+          "x": 1310,
+          "y": 250,
+          "rx": 155,
+          "ry": 195
+        }
+      ],
+      "hills": [
+        {
+          "x": 530,
+          "y": 625,
+          "rx": 145,
+          "ry": 160
+        },
+        {
+          "x": 1050,
+          "y": 370,
+          "rx": 165,
+          "ry": 130
+        }
+      ],
+      "towns": [
+        {
+          "x": 724,
+          "y": 397
+        }
+      ],
+      "roads": [
+        [
+          {
+            "x": -560,
+            "y": 692
+          },
+          {
+            "x": 370,
+            "y": 478
+          },
+          {
+            "x": 680,
+            "y": 430
+          },
+          {
+            "x": 910,
+            "y": 480
+          },
+          {
+            "x": 2000,
+            "y": 633
+          }
+        ],
+        [
+          {
+            "x": 650,
+            "y": -560
+          },
+          {
+            "x": 715,
+            "y": 330
+          },
+          {
+            "x": 680,
+            "y": 430
+          },
+          {
+            "x": 814,
+            "y": 1520
+          }
+        ]
+      ]
+    },
+    "bridge": {
+      "name": "Danube crossing",
+      "subtitle": "Bridge assault",
+      "type": "capture",
+      "objective": {
+        "x": 745,
+        "y": 485,
+        "radius": 95,
+        "seconds": 120
+      },
+      "forests": [
+        {
+          "x": 295,
+          "y": 155,
+          "rx": 220,
+          "ry": 110
+        },
+        {
+          "x": 1080,
+          "y": 205,
+          "rx": 260,
+          "ry": 130
+        },
+        {
+          "x": 1165,
+          "y": 810,
+          "rx": 230,
+          "ry": 125
+        },
+        {
+          "x": 355,
+          "y": 795,
+          "rx": 160,
+          "ry": 110
+        }
+      ],
+      "hills": [
+        {
+          "x": 1100,
+          "y": 580,
+          "rx": 185,
+          "ry": 130
+        },
+        {
+          "x": 305,
+          "y": 430,
+          "rx": 130,
+          "ry": 150
+        }
+      ],
+      "towns": [
+        {
+          "x": 915,
+          "y": 405
+        },
+        {
+          "x": 485,
+          "y": 560
+        }
+      ],
+      "river": true,
+      "roads": [
+        [
+          {
+            "x": -560,
+            "y": 620
+          },
+          {
+            "x": 470,
+            "y": 520
+          },
+          {
+            "x": 710,
+            "y": 480
+          },
+          {
+            "x": 870,
+            "y": 480
+          },
+          {
+            "x": 2000,
+            "y": 305
+          }
+        ]
+      ]
+    },
+    "ridge": {
+      "name": "Nordlingen heights",
+      "subtitle": "Defensive action",
+      "type": "defend",
+      "objective": {
+        "x": 540,
+        "y": 480,
+        "radius": 130,
+        "seconds": 210
+      },
+      "forests": [
+        {
+          "x": 215,
+          "y": 180,
+          "rx": 220,
+          "ry": 105
+        },
+        {
+          "x": 1020,
+          "y": 155,
+          "rx": 250,
+          "ry": 115
+        },
+        {
+          "x": 1100,
+          "y": 760,
+          "rx": 245,
+          "ry": 170
+        }
+      ],
+      "hills": [
+        {
+          "x": 545,
+          "y": 480,
+          "rx": 195,
+          "ry": 245
+        },
+        {
+          "x": 800,
+          "y": 740,
+          "rx": 140,
+          "ry": 95
+        }
+      ],
+      "towns": [
+        {
+          "x": 325,
+          "y": 725
+        }
+      ],
+      "roads": [
+        [
+          {
+            "x": -560,
+            "y": 1100
+          },
+          {
+            "x": 330,
+            "y": 750
+          },
+          {
+            "x": 560,
+            "y": 500
+          },
+          {
+            "x": 1070,
+            "y": 425
+          },
+          {
+            "x": 2000,
+            "y": 530
+          }
+        ]
+      ]
+    }
+  },
+  "perks": {
+    "volley": {
+      "name": "Disciplined volleys",
+      "description": "+15% ranged damage"
+    },
+    "steadfast": {
+      "name": "Steadfast",
+      "description": "20% less morale damage"
+    },
+    "march": {
+      "name": "Campaign veterans",
+      "description": "25% less fatigue"
+    }
+  },
+  "skills": {
+    "firearms": "Firearms",
+    "melee": "Melee",
+    "stamina": "Stamina",
+    "discipline": "Discipline"
+  },
+  "ranks": [
+    "Captain",
+    "Major",
+    "Colonel",
+    "Brigadier",
+    "General"
+  ],
+  "rankXp": [
+    0,
+    20,
+    60,
+    120,
+    210
+  ]
+}
